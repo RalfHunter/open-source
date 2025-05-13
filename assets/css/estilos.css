@@ -10,7 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/assets/images/pexels-markus-winkler-1430818-4584830\ 1.png);
+    background-image: url(../images/pexels-markus-winkler-1430818-4584830\ 1.png);
     font-size: 85px;
     
 }
@@ -171,3 +171,37 @@ input {
 .card-topo .docusaurus {
     background-color: #ADF5BF;
 }
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 150px;
+}
+
+.texto-rodape, .texto-rodape a {
+    background-color: #202124;
+    color: white;
+}
+
+.texto-rodape {
+    padding: 20px;
+    padding-top: 30px;
+    line-height: 40px;
+    font-size: 16px;
+    padding-bottom: 120px;
+}
+.texto-rodape:last-child a:hover{
+    background-color:#EADD67CC ;
+    border-radius: 3px;
+    color: #202124;
+    padding: 2px 6px 2px 6px;
+}
+
+.footer-logos{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: #38393F;
+}
+
