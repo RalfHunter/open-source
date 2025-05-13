@@ -69,56 +69,105 @@ input {
 
 /* CARDS */
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
 .cards .card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #5F6369;
-    max-width: 332px;
-    gap: 12px;
-    border-radius: 8px ;
-    padding-bottom: 20px;
+    justify-content: space-between;
+    height: 495px;
+    width: 332px;
+    border: 1px solid #CECECE;
+    border-radius: 8px 8px 8px 8px;
 }
 
-
-.cards .card h4 {
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.card .card-texto{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-left: 10px;
-}
-.card .card-texto div a {
-    text-decoration: none;
-    color: #1C73E8;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid #5F6369;
-}
-
-.cards .card .icone{
+.card-topo .icone {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #B6D5FF;
-    border-top-left-radius: inherit ;
-    border-top-right-radius: inherit ;
-    min-height: 185px;
+    height: 185px;
+    width: 332px;
+    border-radius: 7px 7px 0px 0px;
 }
 
-/* SUB-CARDS */
+.margin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-topo h4 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
 
-.card .sub-cards{
+.card-topo p{
+    font-size: 16px;
+    color: #2A2B2E;
+}
+
+.card-base .sub-cards {
     display: flex;
-    margin-top: 80px;
     gap: 8px;
+    /* background-color: red; */
 }
 
-.sub-cards .sub-card {
+.card-base .botao {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.card-base .botao a{
+    padding: 8px 42px 8px 42px;
+    text-decoration: none;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+    color: #1C73E8;
+    font-weight: 700;
+}
+
+.sub-cards > * {
     border: 1px solid #5F6369;
-    padding: 5px;
-    border-radius:5px ;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #5F6369;
+}
+
+.card-base .botao a:hover {
+    background-color: #1C73E8;
+    color: white;
+} 
+
+.card-topo .chromium {
+    background-color: #B6D5FF;
+}
+.card-topo .react {
+    background-color: #C5F3FF;
+}
+.card-topo .ubuntu {
+    background-color: #F6C29D;
+}
+.card-topo .git {
+    background-color: #F7B7AD;
+}
+.card-topo .android {
+    background-color: #B6F5D5;
+}
+.card-topo .typescript {
+    background-color: #B9DBFD;
+}
+.card-topo .tensorflow{
+    background-color: #FAE5B1;
+}
+.card-topo .docusaurus {
+    background-color: #ADF5BF;
 }
